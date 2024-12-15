@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--color: #0969a2;
+	--color-darker: #0e5177;
+	--color-darkest: #013454;
+	--color-lighter: #3d9ad1;
+	--color-lightest: #64a8d1;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: var(--color);
+	background: linear-gradient(
+		90deg,
+		var(--color-lighter) 0%,
+		var(--color) 100%
+	);
+	color: white;
+}
+
+body::before {
+	opacity: 0.25;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 0;
+	content: '';
+	background-image: url('assets/fragments.png');
+	pointer-events: none;
+}
+
+.miniver {
+	font-family: 'Miniver', 'Poppins', sans-serif;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* Glowing button */
+.glowing-button {
+	position: relative;
+	z-index: 0;
+}
+
+.glowing-button:before {
+	content: '';
+	background: linear-gradient(
+		45deg,
+		#ff0000,
+		#ff7300,
+		#fffb00,
+		#48ff00,
+		#00ffd5,
+		#002bff,
+		#7a00ff,
+		#ff00c8,
+		#ff0000
+	);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+.glowing-button:active:after {
+	background: transparent;
+}
+
+.glowing-button:hover:before {
+	opacity: 1;
+}
+
+.glowing-button:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: var(--glow-color);
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}

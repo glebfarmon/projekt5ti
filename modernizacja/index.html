@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../shared.css" />
+		<link rel="stylesheet" href="./assets/index.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<title>PC > Modernizacja</title>
+	</head>
+	<body>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-content">
+						<div class="container">
+							<p
+								class="title"
+								id="title_0"
+								attr-text="1. Zidentyfikuj aktualną konfigurację komputera"
+							>
+								&nbsp;
+							</p>
+							<div id="body_0" class="body hidden">
+								<p>
+									Można użyć programu <b>CPU-Z</b> do uzyskania informacji o
+									podstawowych komponentach komputera.
+								</p>
+								<p>
+									Niektóre informacje o komponentach można uzyskać poprzez
+									"Ustawienia" systemu, jednak w niektórych przypadkach
+									konieczne jest fizyczne sprawdzenie urządzenia.
+								</p>
+								<swiper-container
+									class="swiper-cpu-z"
+									effect="cards"
+									grab-cursor="true"
+								>
+									<swiper-slide>
+										<div>
+											<p>CPU</p>
+											<img src="assets/cpu-z/cpu.png" alt="cpu" />
+										</div>
+									</swiper-slide>
+									<swiper-slide>
+										<div>
+											<p>RAM</p>
+											<img src="assets/cpu-z/ram.png" alt="ram" />
+										</div>
+									</swiper-slide>
+									<swiper-slide>
+										<div>
+											<p>Dysk twardy</p>
+											<img src="assets/cpu-z/ssd.png" alt="ssd" />
+										</div>
+									</swiper-slide>
+									<swiper-slide>
+										<div>
+											<p>Karta graficzna</p>
+											<img src="assets/cpu-z/gpu.png" alt="gpu" />
+										</div>
+									</swiper-slide>
+									<swiper-slide>
+										<div>
+											<p>Płyta główna</p>
+											<img
+												src="assets/cpu-z/motherboard.png"
+												alt="motherboard"
+											/>
+										</div>
+									</swiper-slide>
+									<swiper-slide>
+										<div>
+											<p>System</p>
+											<img src="assets/cpu-z/system.png" alt="system" />
+										</div>
+									</swiper-slide>
+									<swiper-slide>
+										<div>
+											<p>Monitor</p>
+											<img src="assets/cpu-z/monitor.png" alt="monitor" />
+										</div>
+									</swiper-slide>
+									<swiper-slide>
+										<div style="padding: 0 10px">
+											<p>Zasilacz, Obudowa, Mysz, Klawiatura</p>
+											<p
+												style="
+													font-weight: 300;
+													margin-top: 20px;
+													font-size: 18px;
+												"
+											>
+												Nie ma możliwości uzyskania tej informacji bezpośrednio
+												z systemu Windows. Aby dowiedzieć się, konieczne jest
+												fizyczne sprawdzenie urządzenia.
+											</p>
+										</div>
+									</swiper-slide>
+								</swiper-container>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-content">
+						<div class="container">
+							<p
+								class="title"
+								id="title_1"
+								attr-text="2. Przykładowa konfiguracja PC (na podstawie aktualnego)"
+							>
+								&nbsp;
+							</p>
+							<div id="body_1" class="body hidden">
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/cpu.png" alt="cpu" />
+											</div>
+											<p>Procesor</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Intel Core i5 14500</p>
+											<b>1179zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/ram.png" alt="ram" />
+											</div>
+											<p>Pamięć RAM</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Lexar 32GB 3200MHz (2x16GB)</p>
+											<b>269zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/ssd.png" alt="ssd" />
+											</div>
+											<p>Dysk Twardy</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Lexar SSD NM710 1TB</p>
+											<b>279zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/gpu.png" alt="gpu" />
+											</div>
+											<p>Karta graficzna</p>
+										</div>
+										<div class="flip-card-back">
+											<p>NVIDIA Geforce RTX 3060</p>
+											<b>1359zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img
+													src="assets/components/motherboard.png"
+													alt="motherboard"
+												/>
+											</div>
+											<p>Płyta główna</p>
+										</div>
+										<div class="flip-card-back">
+											<p>MSI PRO B760-P DDR4 II</p>
+											<b>690zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img
+													src="assets/components/ps.png"
+													alt="power supply"
+												/>
+											</div>
+											<p>Zasilacz</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Be Quiet System Power 10 850w</p>
+											<b>449zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/case.png" alt="case" />
+											</div>
+											<p>Obudowa</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Ventum 200 Solid</p>
+											<b>219zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/mouse.png" alt="mouse" />
+											</div>
+											<p>Mysz</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Logitech M-U0026</p>
+											<b>34zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img
+													src="assets/components/keyboard.png"
+													alt="keyboard"
+												/>
+											</div>
+											<p>Klawiatura</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Logitech K120</p>
+											<b>59zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img
+													src="assets/components/monitor.png"
+													alt="monitor"
+												/>
+											</div>
+											<p>Monitor</p>
+										</div>
+										<div class="flip-card-back">
+											<p>iiyama G-Master G2445HSU</p>
+											<b>389zł</b>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img
+													src="assets/components/windows.png"
+													alt="windows"
+												/>
+											</div>
+											<p>System</p>
+										</div>
+										<div class="flip-card-back">
+											<p>Windows 11 Pro</p>
+											<b>749zł</b>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-content">
+						<div class="container">
+							<p
+								class="title"
+								id="title_2"
+								attr-text="3. Modernizacja czy nowy?"
+							>
+								&nbsp;
+							</p>
+							<div id="body_2" class="body hidden">
+								<p>
+									Cena aktualnego komputera wynosi:
+									<b><span id="price_1"></span>zł</b>
+								</p>
+								<br />
+								<p>
+									Decyzja o modernizacji komputera lub zakupie nowego zależy od
+									kilku kluczowych czynników. Jeśli Twój obecny sprzęt jest
+									stosunkowo nowy i wciąż spełnia Twoje potrzeby, warto rozważyć
+									ulepszenie najważniejszych podzespołów, takich jak pamięć RAM,
+									dysk SSD czy karta graficzna. Taki krok może być opłacalny i
+									wydłuży żywotność komputera.
+								</p>
+								<br />
+								<p>
+									Z kolei w przypadku starszego sprzętu, który nie wspiera
+									nowszych technologii, lub jeśli planujesz korzystać z
+									komputera w bardziej wymagający sposób, np. do gier czy
+									profesjonalnych zastosowań, zakup nowego urządzenia może być
+									lepszym wyborem. Nowy komputer nie tylko zapewni większą
+									wydajność, ale również lepszą kompatybilność z przyszłymi
+									technologiami i większy potencjał do rozbudowy.
+								</p>
+								<br />
+								<p>
+									Kluczową rolę odgrywa tutaj także budżet. Modernizacja często
+									jest tańsza, ale jeśli wymaga wymiany wielu komponentów, koszt
+									może zbliżyć się do ceny nowego komputera. Dlatego decyzję
+									warto podjąć po dokładnej analizie stanu technicznego obecnego
+									sprzętu, kosztów modernizacji i Twoich indywidualnych potrzeb.
+								</p>
+								<br />
+								<p>
+									<b
+										><u
+											>Na podstawie aktualnej konfiguracji zaleca się
+											modernizacja.</u
+										></b
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-content">
+						<div class="container">
+							<p
+								class="title"
+								id="title_3"
+								attr-text="4. Dobór kompatybilnych podzespołów"
+							>
+								&nbsp;
+							</p>
+							<div id="body_3" class="body hidden">
+								<p>
+									<b>Procesor:</b> Intel Core i7-14700 oferuje wyższą wydajność
+									w porównaniu z i5-14500, dzięki większej liczbie rdzeni i
+									wyższym częstotliwościom taktowania. Zapewnia to lepszą
+									obsługę wymagających aplikacji i gier.
+								</p>
+								<p>
+									<b>+<span id="price_2"></span>zł</b>
+								</p>
+								<br />
+								<p>
+									<b>Karta graficzna:</b> RTX 4080 oferuje znaczący wzrost
+									wydajności w porównaniu z RTX 3060, umożliwiając grę w
+									najwyższych ustawieniach graficznych oraz lepszą obsługę
+									technologii ray tracing.
+								</p>
+								<p>
+									<b>+<span id="price_3"></span>zł</b>
+								</p>
+								<br />
+								<p>
+									<b>Płyta główna:</b> MSI PRO Z790-P DDR4 aby w pełni
+									wykorzystać możliwości nowego procesora, konieczna jest
+									wymiana płyty głównej na model z chipsetem Z790, który
+									zapewnia lepszą obsługę podkręcania oraz dodatkowe funkcje.
+								</p>
+								<p>
+									<b>+<span id="price_4"></span>zł</b>
+								</p>
+								<br />
+								<p>
+									<b>Zasilacz:</b> Be Quiet! Straight Power 11 1000W 80 Plus
+									Gold - nowe komponenty, zwłaszcza karta graficzna, wymagają
+									większej mocy zasilania. Ten zasilacz zapewni stabilne i
+									efektywne zasilanie całego systemu.
+								</p>
+								<p>
+									<b>+<span id="price_5"></span>zł</b>
+								</p>
+								<br />
+								<p>
+									<b>Dysk SSD:</b> Samsung 980 Pro 2TB NVMe M.2 dodanie
+									szybszego i pojemniejszego dysku SSD zwiększy przestrzeń na
+									dane oraz przyspieszy ładowanie systemu i aplikacji
+								</p>
+								<p>
+									<b>+<span id="price_6"></span>zł</b>
+								</p>
+								<br />
+								<p>
+									<b>Pamięć RAM:</b> Lexar 64GB 3200MHz (+2x16GB) zwiększenie
+									pamięci RAM do 64 GB pozwoli na płynniejszą pracę w
+									aplikacjach wymagających dużej ilości pamięci, takich jak
+									edycja wideo czy praca z wirtualnymi maszynami.
+								</p>
+								<p>
+									<b>+<span id="price_7"></span>zł</b>
+								</p>
+								<br />
+								<p>
+									Koszt modernizacji: <b><span id="price_8"></span>zł</b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-content">
+						<div class="container">
+							<p
+								class="title"
+								id="title_4"
+								attr-text="5. Funkcje podzespołów komputerowych"
+							>
+								&nbsp;
+							</p>
+							<div id="body_4" class="body hidden">
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/cpu.png" alt="cpu" />
+											</div>
+											<p>Procesor</p>
+										</div>
+										<div class="flip-card-back">
+											<p>
+												Jest sercem komputera, odpowiedzialnym za wykonywanie
+												obliczeń i zarządzanie zadaniami. Interpretuje i
+												wykonuje instrukcje z programów
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/ram.png" alt="ram" />
+											</div>
+											<p>Pamięć RAM</p>
+										</div>
+										<div class="flip-card-back">
+											<p>
+												Służy jako pamięć tymczasowa, w której przechowywane są
+												dane i instrukcje wykorzystywane przez procesor podczas
+												działania programów
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/ssd.png" alt="ssd" />
+											</div>
+											<p>Dysk Twardy</p>
+										</div>
+										<div class="flip-card-back">
+											<p>
+												Przechowywanie danych, systemu operacyjnego i programów
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img src="assets/components/gpu.png" alt="gpu" />
+											</div>
+											<p>Karta graficzna</p>
+										</div>
+										<div class="flip-card-back">
+											<p>
+												Odpowiada za renderowanie grafiki i obrazów. Używana
+												głównie w grach, projektowaniu graficznym, czy
+												obliczeniach wymagających dużej mocy obliczeniowej.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img
+													src="assets/components/motherboard.png"
+													alt="motherboard"
+												/>
+											</div>
+											<p>Płyta główna</p>
+										</div>
+										<div class="flip-card-back">
+											<p>
+												Łączy wszystkie podzespoły komputera i umożliwia ich
+												komunikację. Posiada złącza do procesora, pamięci RAM,
+												karty graficznej, dysków twardych, itp.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="flip-card" tabindex="0">
+									<div class="flip-card-inner">
+										<div class="flip-card-front">
+											<div class="img_inner">
+												<img
+													src="assets/components/ps.png"
+													alt="power supply"
+												/>
+											</div>
+											<p>Zasilacz</p>
+										</div>
+										<div class="flip-card-back">
+											<p>
+												Dostarcza energię elektryczną do wszystkich podzespołów
+												komputera, przekształcając prąd z gniazdka w odpowiednie
+												napięcie
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-content">
+						<div class="container">
+							<p
+								class="title"
+								id="title_5"
+								attr-text="6. Porównanie wydajności"
+							>
+								&nbsp;
+							</p>
+							<div id="body_5" class="body hidden">
+								<table>
+									<tr>
+										<th>Procesor</th>
+										<th>Intel Core i7-14700</th>
+										<th>Intel Core i5 14500</th>
+										<th>Wzrost wydajności</th>
+									</tr>
+									<tr>
+										<td>Liczba rdzeni/wątków</td>
+										<td>14 rdzeni / 20 wątków</td>
+										<td>20 rdzeni / 28 wątków</td>
+										<td>+42,9% rdzeni / +40% wątków</td>
+									</tr>
+									<tr>
+										<td>Taktowanie bazowe</td>
+										<td>2,6 GHz</td>
+										<td>2,1 GHz</td>
+										<td>-19,2%</td>
+									</tr>
+									<tr>
+										<td>Taktowanie turbo</td>
+										<td>do 5,0 GHz</td>
+										<td>do 5,4 GHz</td>
+										<td>+8%</td>
+									</tr>
+									<tr>
+										<td>Pamięć cache L3</td>
+										<td>24 MB</td>
+										<td>33 MB</td>
+										<td>+37,5%</td>
+									</tr>
+								</table>
+
+								<table>
+									<tr>
+										<th>Karta graficzna</th>
+										<th>NVIDIA GeForce RTX 3060</th>
+										<th>NVIDIA GeForce RTX 4080</th>
+										<th>Wzrost wydajności</th>
+									</tr>
+									<tr>
+										<td>Pamięć</td>
+										<td>12 GB GDDR6</td>
+										<td>16 GB GDDR6</td>
+										<td>+33,3%</td>
+									</tr>
+									<tr>
+										<td>CUDA Cores</td>
+										<td>3584</td>
+										<td>9728</td>
+										<td>+171,5%</td>
+									</tr>
+									<tr>
+										<td>Taktowanie bazowe</td>
+										<td>1,32 GHz</td>
+										<td>2,21 GHz</td>
+										<td>+67,4%</td>
+									</tr>
+									<tr>
+										<td>Taktowanie boost</td>
+										<td>1,78 GHz</td>
+										<td>2,51 GHz</td>
+										<td>+41%</td>
+									</tr>
+									<tr>
+										<td>Przepustowość pamięci</td>
+										<td>360 GB/s</td>
+										<td>716,8 GB/s</td>
+										<td>+99,1%</td>
+									</tr>
+									<tr>
+										<td>TDP</td>
+										<td>170 W</td>
+										<td>320 W</td>
+										<td>+88,2%</td>
+									</tr>
+								</table>
+
+								<table>
+									<tr>
+										<th>Dysk</th>
+										<th>Lexar SSD NM710 1 TB</th>
+										<th>Samsung 980 Pro 2 TB</th>
+										<th>Wzrost wydajności</th>
+									</tr>
+									<tr>
+										<td>Pojemność</td>
+										<td>1 TB</td>
+										<td>2 TB</td>
+										<td>+100%</td>
+									</tr>
+									<tr>
+										<td>CUDA Cores</td>
+										<td>3584</td>
+										<td>9728</td>
+										<td>+171,5%</td>
+									</tr>
+									<tr>
+										<td>Prędkość odczytu</td>
+										<td>do 3500 MB/s</td>
+										<td>do 7000 MB/s</td>
+										<td>+100%</td>
+									</tr>
+									<tr>
+										<td>Prędkość zapisu</td>
+										<td>do 3000 MB/s</td>
+										<td>do 5000 MB/s</td>
+										<td>+66,7%</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</body>
+	<script src="./assets/index.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</html>
